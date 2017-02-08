@@ -20,6 +20,7 @@
 - (NSArray *)findStudentWithId:(NSString *)studentId;
 - (BOOL)isStudentExist:(NSString *)studentId;
 - (NSMutableArray *)findAllStudents;
+
 - (void)clearAllStudents;
 
 @end

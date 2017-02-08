@@ -36,8 +36,6 @@ static NSString *const kStudentInfoCell = @"StudentInfoCell";
 
 - (void)viewDidDisappear:(BOOL)animated {
     [super viewDidDisappear:animated];
-    //清除所有学生数据
-    [[StudentManager shareManager] clearAllStudents];
 }
 
 - (void)viewDidLoad {
