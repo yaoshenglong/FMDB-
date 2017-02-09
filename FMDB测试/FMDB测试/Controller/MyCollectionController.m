@@ -83,7 +83,7 @@ static NSString *const cancelAllBarTitle = @"取消";
 //    DemoCollectionViewCell *cell = (DemoCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
     Student *stu = (Student *)self.allItems[indexPath.row];
     [self.selectItems addObject:stu];
-    NSLog(@"self.selectItems == %@", self.selectItems);
+    NSLog(@"self.selectItems == %@ count = %ld", self.selectItems, self.selectItems.count);
 }
 
 - (BOOL)collectionView:(UICollectionView *)collectionView shouldDeselectItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -96,7 +96,7 @@ static NSString *const cancelAllBarTitle = @"取消";
     if ([self.selectItems containsObject:stu]) {
         [self.selectItems removeObject:stu];
     }
-    NSLog(@"self.selectItems == %@", self.selectItems);
+    NSLog(@"self.selectItems == %@ count = %ld", self.selectItems, self.selectItems.count);
 }
 
 #pragma mark - Button Action
@@ -110,10 +110,11 @@ static NSString *const cancelAllBarTitle = @"取消";
                 [self.selectItems addObject:selectStu];
             }
         }
-        NSLog(@"全选: %@", self.selectItems);
+        NSLog(@"全选: %@ count= %ld", self.selectItems, self.selectItems.count);
         sender.title = cancelAllBarTitle;
     }
     else {
+
         for (int index = 0; index < self.allItems.count; index ++) {
             NSIndexPath *indexPath = [NSIndexPath indexPathForItem:index inSection:0];
             if ([self collectionView:self.collectionView shouldDeselectItemAtIndexPath:indexPath]) {
