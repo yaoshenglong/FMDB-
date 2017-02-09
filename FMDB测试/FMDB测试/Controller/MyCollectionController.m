@@ -12,6 +12,9 @@
 #import "DemoCollectionViewCell.h"
 #import "Constants.h"
 
+static NSString *const selectAllBarTitle = @"全选";
+static NSString *const cancelAllBarTitle = @"取消";
+
 @interface MyCollectionController ()<UICollectionViewDelegate, UICollectionViewDataSource>
 
 @property (nonatomic, strong) UICollectionView *collectionView;
@@ -24,6 +27,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"Collection选择测试";
+    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithTitle:selectAllBarTitle style:UIBarButtonItemStylePlain target:self action:@selector(selectedAll:)];
+    self.navigationItem.rightBarButtonItem = rightItem;
+    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@""] style:UIBarButtonItemStylePlain target:self action:@selector(back:)];
+    self.navigationItem.leftBarButtonItem = backItem;
 
     self.selectItems = [NSMutableSet set];
     self.allItems = [[StudentManager shareManager] findAllStudents];
@@ -78,6 +86,10 @@
     NSLog(@"self.selectItems == %@", self.selectItems);
 }
 
+- (BOOL)collectionView:(UICollectionView *)collectionView shouldDeselectItemAtIndexPath:(NSIndexPath *)indexPath {
+    return YES;
+}
+
 - (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath {
 //    DemoCollectionViewCell *cell = (DemoCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
     Student *stu = (Student *)self.allItems[indexPath.row];
@@ -85,6 +97,40 @@
         [self.selectItems removeObject:stu];
     }
     NSLog(@"self.selectItems == %@", self.selectItems);
+}
+
+#pragma mark - Button Action
+- (void)selectedAll:(UIBarButtonItem *)sender {
+    if ([sender.title isEqualToString:selectAllBarTitle]) {
+        for (int index = 0; index < self.allItems.count; index ++) {
+            NSIndexPath *indexPath = [NSIndexPath indexPathForItem:index inSection:0];
+            if ([self collectionView:self.collectionView shouldSelectItemAtIndexPath:indexPath]) {
+                [self.collectionView selectItemAtIndexPath:indexPath animated:YES scrollPosition:UICollectionViewScrollPositionNone];
+                Student *selectStu = (Student *)self.allItems[indexPath.row];
+                [self.selectItems addObject:selectStu];
+            }
+        }
+        NSLog(@"全选: %@", self.selectItems);
+        sender.title = cancelAllBarTitle;
+    }
+    else {
+        for (int index = 0; index < self.allItems.count; index ++) {
+            NSIndexPath *indexPath = [NSIndexPath indexPathForItem:index inSection:0];
+            if ([self collectionView:self.collectionView shouldDeselectItemAtIndexPath:indexPath]) {
+                [self.collectionView deselectItemAtIndexPath:indexPath animated:YES];
+                Student *desSelectStu = (Student *)self.allItems[indexPath.row];
+                if ([self.selectItems containsObject:desSelectStu]) {
+                    [self.selectItems removeObject:desSelectStu];
+                }
+            }
+        }
+        NSLog(@"取消全选: %@", self.selectItems);
+        sender.title = selectAllBarTitle;
+    }
+}
+
+- (void)back:(UIBarButtonItem *)sender {
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
