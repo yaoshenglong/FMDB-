@@ -10,10 +10,10 @@
 #import "UIView+DYCircleAnimation.h"
 #import "Constants.h"
 
-static CGFloat padding = 10.0;
-static CGFloat headImgWidth = 12.0;
+static CGFloat padding = 5.0;
+static CGFloat headImgWidth = 11.5;
 static CGFloat viewHeight = 23.0;
-static CGFloat circleRedius = 12.0;
+static CGFloat circleRedius = 11.5;
 
 @interface DYCustomTagView ()
 
