@@ -1,17 +1,13 @@
 //
-//  Constants.m
+//  TagsViewController.h
 //  FMDB测试
 //
 //  Created by 姚胜龙 on 17/2/9.
 //  Copyright © 2017年 姚胜龙. All rights reserved.
 //
 
-#import "Constants.h"
+#import <UIKit/UIKit.h>
 
-@implementation Constants
-
-- (void)dealloc {
-    
-}
+@interface TagsViewController : UIViewController
 
 @end

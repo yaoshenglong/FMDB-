@@ -33,6 +33,10 @@
 		DFEAC22A1E4C0FC900A48018 /* DemoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEAC2281E4C0FC900A48018 /* DemoCollectionViewCell.m */; };
 		DFEAC22B1E4C0FC900A48018 /* DemoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFEAC2291E4C0FC900A48018 /* DemoCollectionViewCell.xib */; };
 		DFEAC22E1E4C142800A48018 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEAC22D1E4C142800A48018 /* Constants.m */; };
+		DFEAC23A1E4C775000A48018 /* TagsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEAC2381E4C775000A48018 /* TagsViewController.m */; };
+		DFEAC23B1E4C775000A48018 /* TagsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFEAC2391E4C775000A48018 /* TagsViewController.xib */; };
+		DFEAC23E1E4C782900A48018 /* DYCustomTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEAC23D1E4C782900A48018 /* DYCustomTagView.m */; };
+		DFEAC2421E4C7A5F00A48018 /* UIView+DYCircleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEAC2411E4C7A5F00A48018 /* UIView+DYCircleAnimation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +105,13 @@
 		DFEAC2291E4C0FC900A48018 /* DemoCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoCollectionViewCell.xib; sourceTree = "<group>"; };
 		DFEAC22C1E4C142800A48018 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		DFEAC22D1E4C142800A48018 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		DFEAC2371E4C775000A48018 /* TagsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagsViewController.h; sourceTree = "<group>"; };
+		DFEAC2381E4C775000A48018 /* TagsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagsViewController.m; sourceTree = "<group>"; };
+		DFEAC2391E4C775000A48018 /* TagsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TagsViewController.xib; sourceTree = "<group>"; };
+		DFEAC23C1E4C782900A48018 /* DYCustomTagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYCustomTagView.h; sourceTree = "<group>"; };
+		DFEAC23D1E4C782900A48018 /* DYCustomTagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYCustomTagView.m; sourceTree = "<group>"; };
+		DFEAC2401E4C7A5F00A48018 /* UIView+DYCircleAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DYCircleAnimation.h"; sourceTree = "<group>"; };
+		DFEAC2411E4C7A5F00A48018 /* UIView+DYCircleAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DYCircleAnimation.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +164,7 @@
 		DF6793CE1D46204B0019B732 /* FMDB测试 */ = {
 			isa = PBXGroup;
 			children = (
+				DFEAC23F1E4C7A3400A48018 /* Category */,
 				DFEAC1D61E498AB700A48018 /* Manager */,
 				DFEAC1CB1E497DD700A48018 /* Model */,
 				DFEAC1DA1E49D08300A48018 /* View */,
@@ -224,6 +236,9 @@
 				DFEAC1C71E497DC900A48018 /* ViewController.m */,
 				DFEAC2241E4C0C6600A48018 /* MyCollectionController.h */,
 				DFEAC2251E4C0C6600A48018 /* MyCollectionController.m */,
+				DFEAC2371E4C775000A48018 /* TagsViewController.h */,
+				DFEAC2381E4C775000A48018 /* TagsViewController.m */,
+				DFEAC2391E4C775000A48018 /* TagsViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -261,6 +276,8 @@
 		DFEAC1DA1E49D08300A48018 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DFEAC23C1E4C782900A48018 /* DYCustomTagView.h */,
+				DFEAC23D1E4C782900A48018 /* DYCustomTagView.m */,
 				DFEAC1DB1E49D3D500A48018 /* StudentInfoCell.h */,
 				DFEAC1DC1E49D3D500A48018 /* StudentInfoCell.m */,
 				DFEAC1DD1E49D3D500A48018 /* StudentInfoCell.xib */,
@@ -269,6 +286,15 @@
 				DFEAC2291E4C0FC900A48018 /* DemoCollectionViewCell.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		DFEAC23F1E4C7A3400A48018 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				DFEAC2401E4C7A5F00A48018 /* UIView+DYCircleAnimation.h */,
+				DFEAC2411E4C7A5F00A48018 /* UIView+DYCircleAnimation.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -380,6 +406,7 @@
 				DF6793DF1D46204B0019B732 /* LaunchScreen.storyboard in Resources */,
 				DFEAC1C91E497DC900A48018 /* StudentListController.xib in Resources */,
 				DF6793DC1D46204B0019B732 /* Assets.xcassets in Resources */,
+				DFEAC23B1E4C775000A48018 /* TagsViewController.xib in Resources */,
 				DF6793DA1D46204B0019B732 /* Main.storyboard in Resources */,
 				DFEAC1DF1E49D3D500A48018 /* StudentInfoCell.xib in Resources */,
 			);
@@ -409,9 +436,12 @@
 				DFEAC1D11E497DD700A48018 /* Student.m in Sources */,
 				DFEAC1D91E498ADE00A48018 /* StudentManager.m in Sources */,
 				DFEAC1CA1E497DC900A48018 /* ViewController.m in Sources */,
+				DFEAC2421E4C7A5F00A48018 /* UIView+DYCircleAnimation.m in Sources */,
 				DFEAC22E1E4C142800A48018 /* Constants.m in Sources */,
 				DFEAC22A1E4C0FC900A48018 /* DemoCollectionViewCell.m in Sources */,
+				DFEAC23E1E4C782900A48018 /* DYCustomTagView.m in Sources */,
 				DF6794111D4620B20019B732 /* FMDatabasePool.m in Sources */,
+				DFEAC23A1E4C775000A48018 /* TagsViewController.m in Sources */,
 				DFEAC1D01E497DD700A48018 /* Person.m in Sources */,
 				DFEAC1C81E497DC900A48018 /* StudentListController.m in Sources */,
 				DF6793D41D46204B0019B732 /* AppDelegate.m in Sources */,
@@ -570,6 +600,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UV2NDSHQJA;
 				INFOPLIST_FILE = "FMDB测试/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.95vintage.FMDB--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -582,6 +613,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UV2NDSHQJA;
 				INFOPLIST_FILE = "FMDB测试/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.95vintage.FMDB--";
 				PRODUCT_NAME = "$(TARGET_NAME)";

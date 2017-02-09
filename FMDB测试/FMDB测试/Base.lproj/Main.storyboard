@@ -103,11 +103,19 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OBm-6u-Jcf">
-                                <rect key="frame" x="147" y="551" width="37" height="30"/>
+                                <rect key="frame" x="31" y="435" width="142" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="ceshi"/>
+                                <state key="normal" title="CollectionViewDemo"/>
                                 <connections>
                                     <action selector="ceshi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="umA-Gr-2gB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n0i-LG-ao6">
+                                <rect key="frame" x="232" y="435" width="110" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="ShowTagsDemo"/>
+                                <connections>
+                                    <action selector="showTagsView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CZg-Xc-eEy"/>
                                 </connections>
                             </button>
                         </subviews>
