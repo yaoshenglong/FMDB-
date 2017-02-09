@@ -12,6 +12,7 @@
 #import "StudentListController.h"
 #import "StudentManager.h"
 #import "Student.h"
+#import "MyCollectionController.h"
 
 @interface ViewController ()
 
@@ -110,6 +111,12 @@
 - (IBAction)showStudentList:(UIButton *)sender {
     StudentListController *stuListVC = [[StudentListController alloc] initWithNibName:@"StudentListController" bundle:nil];
     [self.navigationController pushViewController:stuListVC animated:YES];
+}
+
+- (IBAction)ceshi:(id)sender {
+    
+    MyCollectionController *collectionVC = [[MyCollectionController alloc] init];
+    [self.navigationController pushViewController:collectionVC animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

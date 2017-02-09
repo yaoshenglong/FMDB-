@@ -29,6 +29,10 @@
 		DFEAC1D91E498ADE00A48018 /* StudentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEAC1D81E498ADE00A48018 /* StudentManager.m */; };
 		DFEAC1DE1E49D3D500A48018 /* StudentInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEAC1DC1E49D3D500A48018 /* StudentInfoCell.m */; };
 		DFEAC1DF1E49D3D500A48018 /* StudentInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFEAC1DD1E49D3D500A48018 /* StudentInfoCell.xib */; };
+		DFEAC2261E4C0C6600A48018 /* MyCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEAC2251E4C0C6600A48018 /* MyCollectionController.m */; };
+		DFEAC22A1E4C0FC900A48018 /* DemoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEAC2281E4C0FC900A48018 /* DemoCollectionViewCell.m */; };
+		DFEAC22B1E4C0FC900A48018 /* DemoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFEAC2291E4C0FC900A48018 /* DemoCollectionViewCell.xib */; };
+		DFEAC22E1E4C142800A48018 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEAC22D1E4C142800A48018 /* Constants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +94,13 @@
 		DFEAC1DB1E49D3D500A48018 /* StudentInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentInfoCell.h; sourceTree = "<group>"; };
 		DFEAC1DC1E49D3D500A48018 /* StudentInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentInfoCell.m; sourceTree = "<group>"; };
 		DFEAC1DD1E49D3D500A48018 /* StudentInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StudentInfoCell.xib; sourceTree = "<group>"; };
+		DFEAC2241E4C0C6600A48018 /* MyCollectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectionController.h; sourceTree = "<group>"; };
+		DFEAC2251E4C0C6600A48018 /* MyCollectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectionController.m; sourceTree = "<group>"; };
+		DFEAC2271E4C0FC900A48018 /* DemoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoCollectionViewCell.h; sourceTree = "<group>"; };
+		DFEAC2281E4C0FC900A48018 /* DemoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoCollectionViewCell.m; sourceTree = "<group>"; };
+		DFEAC2291E4C0FC900A48018 /* DemoCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoCollectionViewCell.xib; sourceTree = "<group>"; };
+		DFEAC22C1E4C142800A48018 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		DFEAC22D1E4C142800A48018 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +222,8 @@
 				DFEAC1C51E497DC900A48018 /* StudentListController.xib */,
 				DFEAC1C61E497DC900A48018 /* ViewController.h */,
 				DFEAC1C71E497DC900A48018 /* ViewController.m */,
+				DFEAC2241E4C0C6600A48018 /* MyCollectionController.h */,
+				DFEAC2251E4C0C6600A48018 /* MyCollectionController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -239,6 +252,8 @@
 			children = (
 				DFEAC1D71E498ADE00A48018 /* StudentManager.h */,
 				DFEAC1D81E498ADE00A48018 /* StudentManager.m */,
+				DFEAC22C1E4C142800A48018 /* Constants.h */,
+				DFEAC22D1E4C142800A48018 /* Constants.m */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -249,6 +264,9 @@
 				DFEAC1DB1E49D3D500A48018 /* StudentInfoCell.h */,
 				DFEAC1DC1E49D3D500A48018 /* StudentInfoCell.m */,
 				DFEAC1DD1E49D3D500A48018 /* StudentInfoCell.xib */,
+				DFEAC2271E4C0FC900A48018 /* DemoCollectionViewCell.h */,
+				DFEAC2281E4C0FC900A48018 /* DemoCollectionViewCell.m */,
+				DFEAC2291E4C0FC900A48018 /* DemoCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -358,6 +376,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF6794141D4620B20019B732 /* Info.plist in Resources */,
+				DFEAC22B1E4C0FC900A48018 /* DemoCollectionViewCell.xib in Resources */,
 				DF6793DF1D46204B0019B732 /* LaunchScreen.storyboard in Resources */,
 				DFEAC1C91E497DC900A48018 /* StudentListController.xib in Resources */,
 				DF6793DC1D46204B0019B732 /* Assets.xcassets in Resources */,
@@ -390,12 +409,15 @@
 				DFEAC1D11E497DD700A48018 /* Student.m in Sources */,
 				DFEAC1D91E498ADE00A48018 /* StudentManager.m in Sources */,
 				DFEAC1CA1E497DC900A48018 /* ViewController.m in Sources */,
+				DFEAC22E1E4C142800A48018 /* Constants.m in Sources */,
+				DFEAC22A1E4C0FC900A48018 /* DemoCollectionViewCell.m in Sources */,
 				DF6794111D4620B20019B732 /* FMDatabasePool.m in Sources */,
 				DFEAC1D01E497DD700A48018 /* Person.m in Sources */,
 				DFEAC1C81E497DC900A48018 /* StudentListController.m in Sources */,
 				DF6793D41D46204B0019B732 /* AppDelegate.m in Sources */,
 				DF6794121D4620B20019B732 /* FMDatabaseQueue.m in Sources */,
 				DF6793D11D46204B0019B732 /* main.m in Sources */,
+				DFEAC2261E4C0C6600A48018 /* MyCollectionController.m in Sources */,
 				DF67940F1D4620B20019B732 /* FMDatabase.m in Sources */,
 				DF6794131D4620B20019B732 /* FMResultSet.m in Sources */,
 				DFEAC1DE1E49D3D500A48018 /* StudentInfoCell.m in Sources */,
