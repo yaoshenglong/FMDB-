@@ -15,10 +15,13 @@ typedef NS_ENUM(NSUInteger, TriangleHeadDirection) {
     TriangleHeadDirectionRight
 };
 
+typedef void(^TapTagBlock)(UITapGestureRecognizer *gesture, NSString *message);
+
 @interface DYCustomTagView : UIView
 
 - (instancetype)initWithMessage:(NSString *)message
-            direction:(TriangleHeadDirection)direction
-         withPosition:(CGPoint)position;
+                      direction:(TriangleHeadDirection)direction
+                   withPosition:(CGPoint)position
+                    tapTagBlock:(void(^)(UITapGestureRecognizer *gesture,NSString *message))tapCallBlock;
 
 @end

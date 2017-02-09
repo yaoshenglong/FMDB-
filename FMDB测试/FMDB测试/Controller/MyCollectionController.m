@@ -30,7 +30,7 @@ static NSString *const cancelAllBarTitle = @"取消";
     self.title = @"Collection选择测试";
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithTitle:selectAllBarTitle style:UIBarButtonItemStylePlain target:self action:@selector(selectedAll:)];
     self.navigationItem.rightBarButtonItem = rightItem;
-    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@""] style:UIBarButtonItemStylePlain target:self action:@selector(back:)];
+    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"back_navigation"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] style:UIBarButtonItemStylePlain target:self action:@selector(back:)];
     self.navigationItem.leftBarButtonItem = backItem;
 
     self.selectItems = [NSMutableSet set];
