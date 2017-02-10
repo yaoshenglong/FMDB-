@@ -5,13 +5,13 @@
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11762"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TagsViewController">
             <connections>
-                <outlet property="bgImageView" destination="vOV-mA-W89" id="NwQ-tk-Ajz"/>
+                <outlet property="scrollView" destination="8HP-Qu-E3B" id="pXK-dk-SuW"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,21 +20,19 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="new_user_guide_2" translatesAutoresizingMaskIntoConstraints="NO" id="vOV-mA-W89">
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8HP-Qu-E3B" customClass="JWScrollView">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                </imageView>
+                    <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="vOV-mA-W89" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="035-va-mho"/>
-                <constraint firstAttribute="trailing" secondItem="vOV-mA-W89" secondAttribute="trailing" id="eKT-MV-J6H"/>
-                <constraint firstItem="vOV-mA-W89" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tHX-wa-ynB"/>
-                <constraint firstAttribute="bottom" secondItem="vOV-mA-W89" secondAttribute="bottom" id="yQc-7U-Cjv"/>
+                <constraint firstAttribute="trailing" secondItem="8HP-Qu-E3B" secondAttribute="trailing" id="C3L-di-cAo"/>
+                <constraint firstItem="8HP-Qu-E3B" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="kbF-ye-nCS"/>
+                <constraint firstAttribute="bottom" secondItem="8HP-Qu-E3B" secondAttribute="bottom" id="nfQ-vL-1tM"/>
+                <constraint firstItem="8HP-Qu-E3B" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rnh-Gn-4nw"/>
             </constraints>
             <point key="canvasLocation" x="33.5" y="54.5"/>
         </view>
     </objects>
-    <resources>
-        <image name="new_user_guide_2" width="375" height="667"/>
-    </resources>
 </document>
