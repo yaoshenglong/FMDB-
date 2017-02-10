@@ -11,13 +11,25 @@
 
 @interface TagsViewController ()
 
+@property (weak, nonatomic) IBOutlet UIImageView *bgImageView;
+
 @end
 
 @implementation TagsViewController
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.navigationController setNavigationBarHidden:NO];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"添加标签显示测试";
+//    self.title = @"添加标签显示测试";
     UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"back_navigation"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] style:UIBarButtonItemStylePlain target:self action:@selector(back:)];
     self.navigationItem.leftBarButtonItem = backItem;
 
@@ -38,6 +50,9 @@
                                    NSLog(@"回调2 __ %@", message);
                                  }];
     [self.view addSubview:tagView2];
+
+    //给大图添加点击
+//    UITapGestureRecognizer *tapGesture
 }
 
 

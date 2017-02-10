@@ -57,9 +57,9 @@ static NSString *const kStudentTable = @"student";
     self.dbPathName = [documentPath stringByAppendingFormat:@"/%@", dbName];
     NSFileManager *fileManager = [NSFileManager defaultManager];
     BOOL isExist = [fileManager fileExistsAtPath:self.dbPathName];
-    [self connectDB];
     if (!isExist) {
         NSLog(@"need create database");
+        [self connectDB];
         return 0;//不存在需要创建
     }
     else {
@@ -76,6 +76,8 @@ static NSString *const kStudentTable = @"student";
     }
     if (![_database open]) {
         NSLog(@"打开数据库失败");
+    }
+    else {
     }
 }
 
