@@ -25,6 +25,10 @@
     self = [super init];
     if (self) {
         self.isHidden = NO;
+        
+        
+        
+        
     }
     return self;
 }
