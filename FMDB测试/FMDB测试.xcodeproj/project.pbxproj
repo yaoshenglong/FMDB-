@@ -413,6 +413,7 @@
 					DF6793CB1D46204B0019B732 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 8JVDPU3L6W;
+						ProvisioningStyle = Automatic;
 					};
 					DF6793E41D46204B0019B732 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -654,6 +655,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 8JVDPU3L6W;
 				INFOPLIST_FILE = "FMDB测试/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -667,6 +669,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 8JVDPU3L6W;
 				INFOPLIST_FILE = "FMDB测试/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
