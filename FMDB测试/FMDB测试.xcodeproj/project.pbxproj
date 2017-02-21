@@ -33,18 +33,11 @@
 		DFEAC22A1E4C0FC900A48018 /* DemoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEAC2281E4C0FC900A48018 /* DemoCollectionViewCell.m */; };
 		DFEAC22B1E4C0FC900A48018 /* DemoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFEAC2291E4C0FC900A48018 /* DemoCollectionViewCell.xib */; };
 		DFEAC22E1E4C142800A48018 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEAC22D1E4C142800A48018 /* Constants.m */; };
-		DFEAC23A1E4C775000A48018 /* TagsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEAC2381E4C775000A48018 /* TagsViewController.m */; };
-		DFEAC23B1E4C775000A48018 /* TagsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFEAC2391E4C775000A48018 /* TagsViewController.xib */; };
-		DFEAC23E1E4C782900A48018 /* DYCustomTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEAC23D1E4C782900A48018 /* DYCustomTagView.m */; };
 		DFEAC2421E4C7A5F00A48018 /* UIView+DYCircleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEAC2411E4C7A5F00A48018 /* UIView+DYCircleAnimation.m */; };
-		DFEAC2451E4D731000A48018 /* DYTagsForImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEAC2441E4D731000A48018 /* DYTagsForImageView.m */; };
 		DFEAC2901E4D958800A48018 /* JWScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEAC28D1E4D958800A48018 /* JWScrollView.m */; };
 		DFEAC2911E4D958800A48018 /* StyledPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEAC28F1E4D958800A48018 /* StyledPageControl.m */; };
 		DFEAC2971E4D95A400A48018 /* NSTimer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEAC2961E4D95A400A48018 /* NSTimer+Addition.m */; };
 		DFEAC29A1E4D97C900A48018 /* RectExt.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEAC2991E4D97C900A48018 /* RectExt.m */; };
-		DFEAC29E1E4DA9D200A48018 /* TagItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEAC29D1E4DA9D200A48018 /* TagItemView.m */; };
-		DFEAC2A11E4DCAC300A48018 /* DYImageTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEAC2A01E4DCAC300A48018 /* DYImageTagView.m */; };
-		DFEAC2A41E4DE3C900A48018 /* DYTagsViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEAC2A31E4DE3C900A48018 /* DYTagsViewManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,15 +106,8 @@
 		DFEAC2291E4C0FC900A48018 /* DemoCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoCollectionViewCell.xib; sourceTree = "<group>"; };
 		DFEAC22C1E4C142800A48018 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		DFEAC22D1E4C142800A48018 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
-		DFEAC2371E4C775000A48018 /* TagsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagsViewController.h; sourceTree = "<group>"; };
-		DFEAC2381E4C775000A48018 /* TagsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagsViewController.m; sourceTree = "<group>"; };
-		DFEAC2391E4C775000A48018 /* TagsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TagsViewController.xib; sourceTree = "<group>"; };
-		DFEAC23C1E4C782900A48018 /* DYCustomTagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYCustomTagView.h; sourceTree = "<group>"; };
-		DFEAC23D1E4C782900A48018 /* DYCustomTagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYCustomTagView.m; sourceTree = "<group>"; };
 		DFEAC2401E4C7A5F00A48018 /* UIView+DYCircleAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DYCircleAnimation.h"; sourceTree = "<group>"; };
 		DFEAC2411E4C7A5F00A48018 /* UIView+DYCircleAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DYCircleAnimation.m"; sourceTree = "<group>"; };
-		DFEAC2431E4D731000A48018 /* DYTagsForImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYTagsForImageView.h; sourceTree = "<group>"; };
-		DFEAC2441E4D731000A48018 /* DYTagsForImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYTagsForImageView.m; sourceTree = "<group>"; };
 		DFEAC28C1E4D958800A48018 /* JWScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWScrollView.h; sourceTree = "<group>"; };
 		DFEAC28D1E4D958800A48018 /* JWScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWScrollView.m; sourceTree = "<group>"; };
 		DFEAC28E1E4D958800A48018 /* StyledPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StyledPageControl.h; sourceTree = "<group>"; };
@@ -130,12 +116,6 @@
 		DFEAC2961E4D95A400A48018 /* NSTimer+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Addition.m"; sourceTree = "<group>"; };
 		DFEAC2981E4D97C900A48018 /* RectExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RectExt.h; sourceTree = "<group>"; };
 		DFEAC2991E4D97C900A48018 /* RectExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RectExt.m; sourceTree = "<group>"; };
-		DFEAC29C1E4DA9D200A48018 /* TagItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagItemView.h; sourceTree = "<group>"; };
-		DFEAC29D1E4DA9D200A48018 /* TagItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagItemView.m; sourceTree = "<group>"; };
-		DFEAC29F1E4DCAC300A48018 /* DYImageTagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYImageTagView.h; sourceTree = "<group>"; };
-		DFEAC2A01E4DCAC300A48018 /* DYImageTagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYImageTagView.m; sourceTree = "<group>"; };
-		DFEAC2A21E4DE3C900A48018 /* DYTagsViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYTagsViewManager.h; sourceTree = "<group>"; };
-		DFEAC2A31E4DE3C900A48018 /* DYTagsViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYTagsViewManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,9 +240,6 @@
 				DFEAC1C71E497DC900A48018 /* ViewController.m */,
 				DFEAC2241E4C0C6600A48018 /* MyCollectionController.h */,
 				DFEAC2251E4C0C6600A48018 /* MyCollectionController.m */,
-				DFEAC2371E4C775000A48018 /* TagsViewController.h */,
-				DFEAC2381E4C775000A48018 /* TagsViewController.m */,
-				DFEAC2391E4C775000A48018 /* TagsViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -300,13 +277,10 @@
 		DFEAC1DA1E49D08300A48018 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DFEAC29B1E4DA98000A48018 /* TagsView */,
 				DFEAC28C1E4D958800A48018 /* JWScrollView.h */,
 				DFEAC28D1E4D958800A48018 /* JWScrollView.m */,
 				DFEAC28E1E4D958800A48018 /* StyledPageControl.h */,
 				DFEAC28F1E4D958800A48018 /* StyledPageControl.m */,
-				DFEAC23C1E4C782900A48018 /* DYCustomTagView.h */,
-				DFEAC23D1E4C782900A48018 /* DYCustomTagView.m */,
 				DFEAC1DB1E49D3D500A48018 /* StudentInfoCell.h */,
 				DFEAC1DC1E49D3D500A48018 /* StudentInfoCell.m */,
 				DFEAC1DD1E49D3D500A48018 /* StudentInfoCell.xib */,
@@ -328,21 +302,6 @@
 				DFEAC2411E4C7A5F00A48018 /* UIView+DYCircleAnimation.m */,
 			);
 			path = Category;
-			sourceTree = "<group>";
-		};
-		DFEAC29B1E4DA98000A48018 /* TagsView */ = {
-			isa = PBXGroup;
-			children = (
-				DFEAC2431E4D731000A48018 /* DYTagsForImageView.h */,
-				DFEAC2441E4D731000A48018 /* DYTagsForImageView.m */,
-				DFEAC29C1E4DA9D200A48018 /* TagItemView.h */,
-				DFEAC29D1E4DA9D200A48018 /* TagItemView.m */,
-				DFEAC29F1E4DCAC300A48018 /* DYImageTagView.h */,
-				DFEAC2A01E4DCAC300A48018 /* DYImageTagView.m */,
-				DFEAC2A21E4DE3C900A48018 /* DYTagsViewManager.h */,
-				DFEAC2A31E4DE3C900A48018 /* DYTagsViewManager.m */,
-			);
-			name = TagsView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -455,7 +414,6 @@
 				DF6793DF1D46204B0019B732 /* LaunchScreen.storyboard in Resources */,
 				DFEAC1C91E497DC900A48018 /* StudentListController.xib in Resources */,
 				DF6793DC1D46204B0019B732 /* Assets.xcassets in Resources */,
-				DFEAC23B1E4C775000A48018 /* TagsViewController.xib in Resources */,
 				DF6793DA1D46204B0019B732 /* Main.storyboard in Resources */,
 				DFEAC1DF1E49D3D500A48018 /* StudentInfoCell.xib in Resources */,
 			);
@@ -482,19 +440,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFEAC2451E4D731000A48018 /* DYTagsForImageView.m in Sources */,
 				DFEAC1D11E497DD700A48018 /* Student.m in Sources */,
-				DFEAC29E1E4DA9D200A48018 /* TagItemView.m in Sources */,
 				DFEAC1D91E498ADE00A48018 /* StudentManager.m in Sources */,
 				DFEAC1CA1E497DC900A48018 /* ViewController.m in Sources */,
 				DFEAC2421E4C7A5F00A48018 /* UIView+DYCircleAnimation.m in Sources */,
 				DFEAC22E1E4C142800A48018 /* Constants.m in Sources */,
-				DFEAC2A41E4DE3C900A48018 /* DYTagsViewManager.m in Sources */,
 				DFEAC22A1E4C0FC900A48018 /* DemoCollectionViewCell.m in Sources */,
-				DFEAC2A11E4DCAC300A48018 /* DYImageTagView.m in Sources */,
-				DFEAC23E1E4C782900A48018 /* DYCustomTagView.m in Sources */,
 				DF6794111D4620B20019B732 /* FMDatabasePool.m in Sources */,
-				DFEAC23A1E4C775000A48018 /* TagsViewController.m in Sources */,
 				DFEAC1D01E497DD700A48018 /* Person.m in Sources */,
 				DFEAC29A1E4D97C900A48018 /* RectExt.m in Sources */,
 				DFEAC1C81E497DC900A48018 /* StudentListController.m in Sources */,

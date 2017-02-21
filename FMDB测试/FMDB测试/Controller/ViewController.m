@@ -13,7 +13,6 @@
 #import "StudentManager.h"
 #import "Student.h"
 #import "MyCollectionController.h"
-#import "TagsViewController.h"
 
 @interface ViewController ()
 
@@ -118,11 +117,6 @@
     
     MyCollectionController *collectionVC = [[MyCollectionController alloc] init];
     [self.navigationController pushViewController:collectionVC animated:YES];
-}
-
-- (IBAction)showTagsView:(id)sender {
-    TagsViewController *tagsVC = [[TagsViewController alloc] initWithNibName:@"TagsViewController" bundle:nil];
-    [self.navigationController pushViewController:tagsVC animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
